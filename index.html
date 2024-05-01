@@ -1,51 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
-<!-- icon -->
-<script src="https://kit.fontawesome.com/674bf18386.js" crossorigin="anonymous"></script>
-<!-- custom color -->
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          clifford: '#da373d',
-        }
-      }
-    }
-  }
-</script>
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/674bf18386.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
 
-  <style>
-    .manrope{
-      font-family: "Manrope", sans-serif;
-    }
-    .screen{
-      max-width: 7xl;
-          }
-          .baner_w{
-            width: 1170px;
-            height: 550px;
-          }
-  </style>
-</head>
-<body class="manrope screen lg:mx-10">
-  <div class="navbar bg-base-100">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+      .screen {
+        max-width: 7xl;
+      }
+      .baner_w {
+        width: 1170px;
+        height: 550px;
+      }
+      .programe_img {
+        width: 573px;
+        height: 338px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: rgba(19, 19, 24, 0.5);
+      }
+      .programe_img3 {
+        width: 1170px;
+        height: 338px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: rgba(19, 19, 24, 0.5);
+      }
+
+      /* sm */
+      .programe_img_sm{
+        width: 335px;
+height: 244px;
+      }
+    </style>
+  </head>
+  <body class="manrope screen lg:mx-10">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Contact</a></li>
+          </ul>
         </div>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <a class="text-4xl font-extrabold"
+          >Hockey<span class="text-red-600">’</span>s</a
+        >
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
           <li><a>Home</a></li>
           <li><a>About</a></li>
           <li><a>Blog</a></li>
@@ -53,72 +112,165 @@
           <li><a>Contact</a></li>
         </ul>
       </div>
-      <a class=" text-4xl font-extrabold">Hockey<span class="text-red-600">’</span>s</a>
+      <div class="navbar-end">
+        <a class="btn text-center text-xl font-bold bg-red-500 text-white"
+          >Get Ticket</a
+        >
+      </div>
     </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a>Home</a></li>
-      <li><a>About</a></li>
-      <li><a>Blog</a></li>
-      <li><a>Pages</a></li>
-      <li><a>Contact</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end">
-      <a class="btn text-center text-xl font-bold bg-red-500 text-white">Get Ticket</a>
-    </div>
-  </div>
 
-
-  <!-- main -->
-  <main>
-    <!-- baner -->
-    <div class="carousel w-full">
-      <div id="slide1" class="carousel-item relative w-full">
-        <img src="https://i.ibb.co/Dp45BsP/1.png" class="w-full h-96" />
-        <div class="absolute flex  justify-start    transform -translate-y-1/2 left-5 right-5 bottom-0 gap-4 ">
-          <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
-          <a href="#slide2" class="btn btn-circle bg-black text-white ">❯</a>
+    <!-- main -->
+    <main>
+      <!-- baner -->
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="https://i.ibb.co/Dp45BsP/1.png" class="w-full h-96" />
+          <div
+            class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 bottom-0 gap-4"
+          >
+            <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+          </div>
         </div>
-      </div> 
-      <div id="slide2" class="carousel-item relative w-full">
-        <img src="https://i.ibb.co/tzZrBgZ/4.png" class="w-full h-96" />
-        <div class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 bottom-0 gap-4">
-          <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
-          <a href="#slide1" class="btn btn-circle bg-black text-white ">❯</a>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://i.ibb.co/tzZrBgZ/4.png" class="w-full h-96" />
+          <div
+            class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 bottom-0 gap-4"
+          >
+            <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+          </div>
         </div>
-      </div> 
-    
-    </div>
+      </div>
 
-    <!-- professional -->
-    <section class="text-center border-y-2 border-dashed py-8 mt-9 ">
-      <h1 class="text-4xl font-bold sm:text-xl">Professional Hockeys Club</h1>
-      <p class="text-base font-medium text-gray-500">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-    </section>
+      <!-- professional -->
+      <section class="text-center border-y-2 border-dashed py-8 mt-9">
+        <h1 class="text-4xl font-bold sm:text-xl">Professional Hockeys Club</h1>
+        <p class="text-base font-medium text-gray-500">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </section>
 
-    <div class="grid sm:grid-cols-1 lg:grid-cols-4 justify-center items-center gap-y-4 mt-11 mb-11">
-<div class="m-0 mx-auto text-center">
-  <div class="radial-progress text-red-700" style="--value:87;" role="progressbar">87%</div>
-  <p class="text-xl font-semibold">Prayer Facility</p>
-  <p class="font-normal text-base text text-gray-300">Amet consectetur. Condimentum dignissim adipiscing .</p>
-</div>
-<div  class="m-0 mx-auto text-center">
-  <div class="radial-progress text-green-400" style="--value:95;" role="progressbar">95%</div>
-  <p class="text-xl font-semibold">Experienced Coach</p>
-  <p class="font-normal text-base text-gray-300">Amet consectetur. Condimentum dignissim adipiscing .</p>
-</div>
-<div  class="m-0 mx-auto text-center">
-  <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
-  <p class="text-xl font-semibold">Senior Player</p>
-  <p class="font-normal text-base text-gray-300">Amet consectetur. Condimentum dignissim adipiscing .</p>
-</div>
-<div  class="m-0 mx-auto text-center">
-  <div class="radial-progress text-blue-400" style="--value:80;" role="progressbar">80%</div>
-  <p class="text-xl font-semibold">Training Ground</p>
-  <p class="font-normal text-base text-gray-300">Amet consectetur. Condimentum dignissim adipiscing .</p>
-</div>
-    </div>
-  </main>
-</body>
+      <div
+        class="grid sm:grid-cols-1 lg:grid-cols-4 justify-center items-center gap-y-4 mt-11 mb-11"
+      >
+        <div class="m-0 mx-auto text-center">
+          <div
+            class="radial-progress text-red-700"
+            style="--value: 87"
+            role="progressbar"
+          >
+            87%
+          </div>
+          <p class="text-xl font-semibold">Prayer Facility</p>
+          <p class="font-normal text-base text text-gray-300">
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+        <div class="m-0 mx-auto text-center">
+          <div
+            class="radial-progress text-green-400"
+            style="--value: 95"
+            role="progressbar"
+          >
+            95%
+          </div>
+          <p class="text-xl font-semibold">Experienced Coach</p>
+          <p class="font-normal text-base text-gray-300">
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+        <div class="m-0 mx-auto text-center">
+          <div
+            class="radial-progress text-yellow-400"
+            style="--value: 90"
+            role="progressbar"
+          >
+            90%
+          </div>
+          <p class="text-xl font-semibold">Senior Player</p>
+          <p class="font-normal text-base text-gray-300">
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+        <div class="m-0 mx-auto text-center">
+          <div
+            class="radial-progress text-blue-400"
+            style="--value: 80"
+            role="progressbar"
+          >
+            80%
+          </div>
+          <p class="text-xl font-semibold">Training Ground</p>
+          <p class="font-normal text-base text-gray-300">
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+      </div>
+
+      <!-- program section -->
+      <section class="text-center border-y-2 border-dashed py-8 mt-9 mb-11">
+        <h1 class="text-4xl font-bold sm:text-xl">Program Sections</h1>
+        <p class="text-base font-medium text-gray-500">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </section>
+
+      <div class="grid sm:grid-cols-1 lg:grid-cols-1 justify-center items-center gap-4">
+        <div
+          class="bg-[url('https://i.ibb.co/yhCLsYS/2.png')] programe_img bg-no-repeat text-white px-10 grid sm:grid-cols-1 lg:grid-cols-2 items-center"
+        >
+          <div class="">
+            <h1 class="text-3xl font-extrabold mb-4">Junior Program</h1>
+            <p class="text-base font-medium leading-6">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn bg-red-500 border-2 rounded-lg py-2.5 px-5 text-white text-sm font-bold mt-4"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-[url('https://i.ibb.co/yfNnVD3/3.png')] programe_img bg-no-repeat text-white px-10 grid items-center"
+        >
+          <div class="">
+            <h1 class="text-3xl font-extrabold mb-4">Teenager Program</h1>
+            <p class="text-base font-medium leading-6">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn bg-red-500 border-2 rounded-lg py-2.5 px-5 text-white text-sm font-bold mt-4"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-subgrid gap-4 col-span-3 bg-[url('https://i.ibb.co/tzZrBgZ/4.png')] bg-no-repeat programe_img3 relative">
+          <div class="col-center-2   absolute bottom-0 left-0 text-white px-10 mb-10">
+            <h1 class="text-3xl font-extrabold mb-4">Teenager Program</h1>
+            <p class="text-base font-medium leading-6">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim <br> sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn bg-red-500 border-2 rounded-lg py-2.5 px-5 text-white text-sm font-bold mt-4"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

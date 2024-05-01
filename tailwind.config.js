@@ -4,8 +4,8 @@ module.exports = {
       './pages/**/*.{html,js}',
       './components/**/*.{html,js}',
     ],
-    // plugins: [
-    //     require('daisyui'),
-    //   ],
-    // ...
+    plugins: [
+        require('daisyui'),
+      ],
+    
   }
