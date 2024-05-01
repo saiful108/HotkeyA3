@@ -32,6 +32,10 @@
     .screen{
       max-width: 7xl;
           }
+          .baner_w{
+            width: 1170px;
+            height: 550px;
+          }
   </style>
 </head>
 <body class="manrope screen lg:mx-10">
@@ -64,5 +68,28 @@
       <a class="btn text-center text-xl font-bold bg-red-500 text-white">Get Ticket</a>
     </div>
   </div>
+
+
+  <!-- main -->
+  <main>
+    <!-- baner -->
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="https://i.ibb.co/Dp45BsP/1.png" class="w-full h-96" />
+        <div class="absolute flex  justify-start    transform -translate-y-1/2 left-5 right-5 bottom-0 gap-4 ">
+          <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+          <a href="#slide2" class="btn btn-circle bg-black text-white ">❯</a>
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="https://i.ibb.co/tzZrBgZ/4.png" class="w-full h-96" />
+        <div class="absolute flex justify-start transform -translate-y-1/2 left-5 right-5 bottom-0 gap-4">
+          <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+          <a href="#slide1" class="btn btn-circle bg-black text-white ">❯</a>
+        </div>
+      </div> 
+    
+    </div>
+  </main>
 </body>
 </html>
