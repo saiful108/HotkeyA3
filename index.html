@@ -10,12 +10,9 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- icon -->
     <script
       src="https://kit.fontawesome.com/674bf18386.js"
@@ -70,6 +67,16 @@ height: 244px;
         width: 573px;
 height: 218px;
 flex-shrink: 0;
+      }
+
+      .footer_mini_text{
+        color: rgba(255, 255, 255, 0.60);
+
+
+font-size: 16px;
+font-style: normal;
+
+
       }
     </style>
   </head>
@@ -514,5 +521,47 @@ flex-shrink: 0;
       </div>
     </section>
     </main>
+
+    <footer class="footer p-10 bg-black  sm:p-10 lg:p-24">
+      <aside class="grid grid-cols-1 justify-center items-center gap-4">
+                <p class="text-2xl font-extrabold text-white">Get In Touch</p>
+                <small class="text-base font-medium footer_mini_text ">Dit amet consectetur. Condimentum <br>  adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </small>
+                <div class="flex justify-start gap-4 items-center">
+                  <i class="fa-solid fa-envelope text-red-500"></i>
+                  <p class="footer_mini_text">hockeys@support.com</p>
+                </div>
+                <div class="flex justify-start gap-4 items-center">
+                  <i class="fa-solid fa-phone text-red-500"></i>
+                  <p class="footer_mini_text">(+62) 123-321-543</p>
+                </div>
+               
+             
+      </aside> 
+      <nav>
+        <h6 class=" text-white text-xl font-bold">Company</h6> 
+        <a class="link link-hover footer_mini_text">About us</a>
+        <a class="link link-hover footer_mini_text">Leadership</a>
+        <a class="link link-hover footer_mini_text">Careers</a>
+        <a class="link link-hover footer_mini_text">News & Article</a>
+        <a class="link link-hover footer_mini_text">Legal Notice</a>
+      </nav> 
+      <nav >
+        <h6 class=" text-white text-xl font-bold">Support</h6> 
+        <a class="link link-hover footer_mini_text">Help Center</a>
+        <a class="link link-hover footer_mini_text">FAQ</a>
+        <a class="link link-hover footer_mini_text">Ticket Support</a>
+        <a class="link link-hover footer_mini_text">Contact Us</a>
+       
+      </nav> 
+    
+      <nav >
+        <h6 class=" text-white text-xl font-bold">Services</h6> 
+        <a class="link link-hover footer_mini_text">Academy</a>
+        <a class="link link-hover footer_mini_text">Group Lesson</a>
+        <a class="link link-hover footer_mini_text">Private Lesson</a>
+        <a class="link link-hover footer_mini_text">Hockeys for kids</a>
+        <a class="link link-hover footer_mini_text">Hockeys for Adults</a>
+      </nav>
+    </footer>
   </body>
 </html>
